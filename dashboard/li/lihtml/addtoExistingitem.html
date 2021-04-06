@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+</head>
+
+<body style="background-color: #1d121b;">
+
+
+
+    <div class="grid-container">
+        <header class="header">
+            
+        </header>
+        <aside class="sidenav">
+            <ul class="sidenav__list">
+                <!-- //<a href="./li/lihtml/searchToBuyitem.html"></a> -->
+                <li class="sidenav__list-item" style="color: #f7f7f7;" onclick="searchbuyitem();">Sell Items</li>
+                <li class="sidenav__list-item" style="color: #f7f7f7;" onclick="addnewitem()">Add New Items</li>
+                <li class="sidenav__list-item" style="color: #f7f7f7;" onclick="addtoExistingitem()">Add Existing Items
+                </li>
+                <li class="sidenav__list-item" style="color: #f7f7f7;" onclick="listallitems()">List All Items</li>
+                <li class="sidenav__list-item " style="color: #f7f7f7;" onclick="totalcountpage()">Ledger</li>
+                <li class="sidenav__list-item" style="color: #f7f7f7;" onclick="LogogLgin()">Login History</li>
+                <li class="sidenav__list-item" style="color: #f7f7f7;" onclick="discdiscountPge()">Discount Initialize</li>
+            </ul>
+
+        </aside>
+
+
+        <main class="main">
+
+
+            <style type="text/css">
+                .login-form {
+                    width: 340px;
+                    margin: 50px auto;
+                }
+
+                .login-form form {
+                    margin-bottom: 15px;
+                    background: #f7f7f7;
+                    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+                    padding: 30px;
+                }
+
+                .login-form h2 {
+                    margin: 0 0 15px;
+                }
+
+                .form-control,
+                .btn {
+                    min-height: 38px;
+                    border-radius: 2px;
+                }
+
+                .btn {
+                    font-size: 15px;
+                    font-weight: bold;
+                }
+            </style>
+
+            <div class="login-form">
+                <form name="addnwform" onsubmit="addexisitng();" method="post"
+                    style="background-color: rgba(245, 245, 245, 0.4);">
+                    <h2 class="text-center">Add to Existing Items</h2>
+                    <div class="form-group">
+                        <select id="selectorthingi" class="selectpicker form-control" data-style="btn-info"   multiple data-max-options="1" data-live-search="true" >
+                            
+                                <!-- <option>PHP</option>
+                                <option>CSS</option>
+                                <option>HTML</option>
+                                <option>CSS 3</option>
+                                <option>Bootstrap</option>
+                                <option>JavaScript</option>
+                            
+                                <option>Java</option>
+                                <option>C#</option>
+                                <option>Python</option> -->
+                               
+                        </select>
+                    </div>
+                
+                    <div class="form-group">
+                        <input id="ProOriPro" name="ProOriPro" type="number" class="form-control"
+                            placeholder="Product Original Price" step=".001">
+                    </div>
+                    <div class="form-group">
+                        <input id="ProdSaPi" name="ProdSaPi" type="number" class="form-control"
+                            placeholder="Product Sale Price" step=".001" >
+                    </div>
+                    <div class="form-group">
+                        <input id="ProQuan" name="ProQuan" type="number" class="form-control"
+                            placeholder="Product Quantity" step=".001" >
+                    </div>
+                    <div class="form-group">
+                        <button id="addproductButton" type="submit" class="btn btn-primary btn-block">Add
+                            Product</button>
+                    </div>
+
+                </form>
+            </div>
+
+
+
+
+
+
+
+            <!-- <div class="containerx">        
+                  <div class="cardx" > -->
+
+            
+
+            <!-- <input type="text" id="myInput" onkeyup="searchstuff()" placeholder="Search for names.."
+                title="Type in a name">
+
+            <div class=".container-sm" id="searchcontainer">
+
+            </div> -->
+
+
+
+            <script>
+
+
+            </script>
+
+
+
+
+            <!-- </div>
+            </div> -->
+
+          
+
+
+           
+
+
+
+
+        </main>
+        <footer class="footer">
+            <div class="footer__copyright">&copy; 2020</div>
+            <div class="footer__signature">Made by Muhammad Umar Khan</div>
+        </footer>
+    </div>
+
+
+    <link href="../licss/addtoExistingitem.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../lisjs/test.js"></script>
+    <script type="text/javascript" src="../lisjs/addtoExistingitem.js"></script>
+    <script>
+        window.jQuery = window.$ = require('jquery');
+    </script>
+
+
+    <!-- <link href="../licss/boostrap.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../lisjs/boostrap.js"></script>
+
+    <script type="text/javascript" src="../lisjs/botsrapjqueryaother.js"></script>
+
+    <script type="text/javascript" src="../lisjs/bostJquery.js"></script> -->
+
+
+    <!-- 
+ these below  imports are for selector with search and stuff -->
+    <link href="bootstrap-select.min.css" rel="stylesheet" type="text/css" />
+    <link href="bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="bootstrap-select.min.js"></script>
+    <script type="text/javascript" src="bootstrap.min.js"></script>
+
+    <!-- 
+ these above  imports are for selector with search and stuff -->
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'">
+  <title>Hello Worasadld!</title>
+</head>
+
+<body style="background-color: #1d121b;">
+
+  <!-- <button id="talk"> talk to main process</button> -->
+  <button onclick="goBack()"  class="btn btn-info btn-md" >Go Back</button>
+ 
+
+  <script>
+  function goBack() {
+    window.history.back();
+  }
+  </script>
+  <div id="login">
+    <h3 class="text-center text-white pt-5">Registration form</h3>
+
+    <div class="container">
+      <div id="login-row" class="row justify-content-center align-items-center">
+        <div id="login-column" class="col-md-6">
+          <div id="login-box" class="col-md-12">
+            <form id="login-form" class="form" action="" method="post">
+              <h3 class="text-center text-info">Register</h3>
+              <div class="form-group">
+                <label for="username" class="text-info">Username:</label><br>
+                <input type="text" name="username" id="usernamereg" class="form-control" required>
+              </div>
+              <div class="form-group">
+                <label for="uid" class="text-info">UniqueID:</label><br>
+                <input type="number" name="uid" id="uid" class="form-control" step=".001" required>
+              </div>
+              <div class="form-group">
+                <label for="password" class="text-info">Password:</label><br>
+                <input type="text" name="password" id="passwordreg" class="form-control" required>
+              </div>
+              <div class="form-group">
+                <label for="keyreg" class="text-info">Key:</label><br>
+                <input type="text" name="keyreg" id="keyreg" class="form-control" required>
+              </div>
+              <div class="form-group">
+                <input type="button" id="regabutton" name="submit" class="btn btn-info btn-md" 
+                  value="submit">
+
+              </div>
+            
+            
+                
+
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <link href="/register.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+
+
+
+
+  <!-- <script>
+    // You can also require other files to run in this process
+    require('./login.js')
+  </script> -->
+  <script type="text/javascript" src="register.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'">
+  <title>MK Medical Store</title>
+</head>
+
+<body style="background-color: #1d121b;">
+
+  <!-- <button id="talk"> talk to main process</button> -->
+
+  <div id="login">
+    <h3 class="text-center text-white pt-5">Login form</h3>
+
+    <div class="container">
+      <div id="login-row" class="row justify-content-center align-items-center">
+        <div id="login-column" class="col-md-6">
+          <div id="login-box" class="col-md-12">
+            <form id="login-form" class="form" action="" method="post">
+              <h3 class="text-center text-info">Login</h3>
+              <div class="form-group">
+                <label for="uinid" class="text-info">UniqueID:</label><br>
+                <input type="number" name="uinid" id="uinid" step=".001" class="form-control" required>
+              </div>
+              <div class="form-group">
+                <label for="password" class="text-info">Password:</label><br>
+                <input type="password" name="password" id="password" class="form-control" required>
+              </div>
+              <div class="form-group">
+             
+                <input type="button" id="loginbutton" name="submit" class="btn btn-info btn-md" 
+                  value="submit">
+
+              </div>
+              <div id="register-link" class="text-right">
+                <a href="register.html" class="text-info">Register here</a><br>
+                
+
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <link href="/a.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+
+
+
+
+  <script>
+    // You can also require other files to run in this process
+    require('./login.js')
+  </script>
+  <script type="text/javascript" src="a.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body style="background-color: #1d121b;">
+
+
+
+    <div class="grid-container">
+        <header class="header">
+
+        </header>
+        <aside class="sidenav">
+            <ul class="sidenav__list">
+                <!-- //<a href="./li/lihtml/searchToBuyitem.html"></a> -->
+                <li class="sidenav__list-item" style="color: #f7f7f7;" onclick="searchbuyitem();">Sell Items</li>
+                <li class="sidenav__list-item" style="color: #f7f7f7;" onclick="addnewitem()">Add New Items</li>
+                <li class="sidenav__list-item" style="color: #f7f7f7;" onclick="addtoExistingitem()">Add Existing Items
+                </li>
+                <li class="sidenav__list-item" style="color: #f7f7f7;" onclick="listallitems()">List All Items</li>
+                <li class="sidenav__list-item " style="color: #f7f7f7;" onclick="totalcountpage()">Ledger</li>
+                <li class="sidenav__list-item" style="color: #f7f7f7;" onclick="LogogLgin()">Login History</li>
+                <li class="sidenav__list-item" style="color: #f7f7f7;" onclick="discdiscountPge()">Discount Initialize
+                </li>
+            </ul>
+
+        </aside>
+        <main class="main">
+            <div style="display: flex; flex-direction: row; min-width: fit-content; min-height: fit-content;">
+                <div class="card" style="width: 18rem; align-items: center; margin-left: 10%;  min-width: fit-content; min-height: fit-content;">
+                    <div class="card-body">
+                        <label class="datePickerLabelC" for="dateofbirth">Start Date</label>
+                        <input class="datepickerInputC" type="date" name="dateofbirth" id="startDatepickOi"
+                            onchange="startDatepick();">
+
+                    </div>
+                </div>
+
+
+                <div class="card" style="width: 18rem; align-items: center; min-width: fit-content; min-height: fit-content;">
+                    <div class="card-body">
+                        <label class="datePickerLabelC" for="dateofbirth">End Date</label>
+                        <input class="datepickerInputC" type="date" name="dateofbirth" id="endDatepickOe"
+                            onchange="endDatepick();">
+
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem; align-items: center; margin-right: 10%; min-width: fit-content; min-height: fit-content; ">
+                    <div class="card-body">
+                        
+                        <button class="btn btn-primary"  name="CalculateProfit" id="buttonthingi"
+                            onclick="calculateProfit();">Calculate Profit</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="card" style=" align-items: center; min-width: fit-content; min-height: fit-content; margin-right: 10%; margin-left: 10%;">
+                <div class="card-body">
+                    <label class="datePickerLabelC" for="dateofbirth">Totoal profit</label>
+                </div>
+            </div>
+            <div class=".container-sm">
+                <table id="ayz" class="table table-dark" style="background-color: #1d121b; color: #ebd280; ">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Date And Time</th>
+                            <th scope="col">Profit</th>
+    
+                        </tr>
+                    </thead>
+                    <tbody id="profitTableShow">
+    
+    
+                    </tbody>
+                </table>
+
+            </div>
+
+
+           
+
+        </main>
+        <footer class="footer">
+            <div class="footer__copyright">&copy; 2020</div>
+            <div class="footer__signature">Made by Muhammad Umar Khan</div>
+        </footer>
+    </div>
+
+    <script>
+        window.jQuery = window.$ = require('jquery');
+    </script>
+
+
+    <link href="../licss/totalcountpage.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../lisjs/test.js"></script>
+    <script type="text/javascript" src="../lisjs/totalcountpage.js"></script>
+
+    <link href="../licss/boostrap.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../lisjs/bostJquery.js"></script>
+    <script type="text/javascript" src="../lisjs/botsrapjqueryaother.js"></script>
+
+    <script type="text/javascript" src="../lisjs/boostrap.js"></script>
+
+</body>
+
+</html>

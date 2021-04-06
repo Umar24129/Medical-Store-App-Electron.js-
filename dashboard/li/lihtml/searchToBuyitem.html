@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body style="background-color: #1d121b;">
+
+
+
+    <div class="grid-container">
+        <header class="header">
+         
+        </header>
+        <aside class="sidenav">
+            <ul class="sidenav__list">
+                <!-- //<a href="./li/lihtml/searchToBuyitem.html"></a> -->
+                <li class="sidenav__list-item" style="color: #f7f7f7;" onclick="searchbuyitem();">Sell Items</li>
+                <li class="sidenav__list-item" style="color: #f7f7f7;" onclick="addnewitem()">Add New Items</li>
+                <li class="sidenav__list-item" style="color: #f7f7f7;" onclick="addtoExistingitem()">Add Existing Items
+                </li>
+                <li class="sidenav__list-item" style="color: #f7f7f7;" onclick="listallitems()">List All Items</li>
+                <li class="sidenav__list-item " style="color: #f7f7f7;" onclick="totalcountpage()">Ledger</li>
+                <li class="sidenav__list-item" style="color: #f7f7f7;" onclick="LogogLgin()">Login History</li>
+                <li class="sidenav__list-item" style="color: #f7f7f7;" onclick="discdiscountPge()">Discount Initialize</li>
+            </ul>
+
+        </aside>
+        <main class="main">
+            <div class=".container-sm">
+
+                <!-- <div class="login-form">
+                    <div class=".container-sm" style="background-color: #1d121b; margin-left: 70%;"> 
+                        <h1>this is trash </h1>
+                    </div> -->
+                <!-- <form name="addnwform" onsubmit="addexisitng();" method="post"
+                    style="background-color: rgba(245, 245, 245, 0.4);"> -->
+                <h2 class="text-center">Selling Form</h2>
+                <table class="table">
+                    <tr>
+                        <td>
+                            <div class="form-group">
+                                <select id="selectorthingi" class="selectpicker " data-style="btn-info" multiple
+                                    data-max-options="50" data-live-search="true" multiple="multiple" onchange="showselecteditems()">
+
+                                    <!-- <option>PHP</option>
+                                                <option>CSS</option>
+                                                <option>HTML</option>
+                                                <option>CSS 3</option>
+                                                <option>Bootstrap</option>
+                                                <option>JavaScript</option>
+                                            
+                                                <option>Java</option>
+                                                <option>C#</option>
+                                                <option>Python</option> -->
+
+                                </select>
+                            </div>
+
+
+                        </td>
+
+
+                        <td>
+                            <!-- <div 
+                                style=" word-wrap: break-word; background-color: black; display: flex; text-align: center; margin-left: 50%;  margin-top: 0em; margin-right: 30%; min-height: 100px; min-width: 100px; max-width: fit-content; max-height: fit-content;">
+                                
+
+
+                                <h3   id="totalamounthead" style="color: red; display: flex; background-color: black; overflow-wrap: break-word;
+                                word-wrap: break-word;
+                                hyphens: auto;"> </h3>
+                            </div> -->
+
+
+
+                        </td>
+                        <td style="background-color: black; text-align: center; ">
+                            <h3 id="totalamounthead" style="color: red;"></h3>
+                        </td>
+                    </tr>
+
+                </table>
+
+
+
+                <!-- <button id="nanana" onclick="showselecteditems();" class="btn btn-primary btn-block">Count
+                    Price</button> -->
+
+
+
+                   <form onsubmit="geninvandadd();">
+
+                <table id="thisistableforshow" class="table table-dark" style="background-color: #1d121b; color: #ebd280; ">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Product Name</th>
+                            <th scope="col">Type</th>
+                            <th scope="col">Quantity</th>
+                            <th scope="col">Price-per-item</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody id="addingtotable">
+
+
+                    </tbody>
+                </table>
+
+
+
+                <button id="addproductButton"  type="submit" class="btn btn-primary btn-block">Generate Invoice</button>
+
+
+                <!-- </form> -->
+            </div>
+        </form>
+
+
+
+
+
+
+        </main>
+        <footer class="footer">
+            <div class="footer__copyright">&copy; 2020</div>
+            <div class="footer__signature">Made by Muhammad Umar Khan</div>
+        </footer>
+    </div>
+
+
+    <link href="../licss/searchToBuyitem.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../lisjs/test.js"></script>
+    <script type="text/javascript" src="../lisjs/searchToBuyitem.js"></script>
+
+    <!-- <link href="../licss/boostrap.css" rel="stylesheet" type="text/css" />
+   <script type="text/javascript" src="../lisjs/bostJquery.js"></script>
+   <script type="text/javascript" src="../lisjs/botsrapjqueryaother.js"></script>
+
+   <script type="text/javascript" src="../lisjs/boostrap.js"></script> -->
+
+
+    <script>
+        window.jQuery = window.$ = require('jquery');
+    </script>
+
+
+    <!-- 
+ these below  imports are for selector with search and stuff -->
+    <link href="bootstrap-select.min.css" rel="stylesheet" type="text/css" />
+    <link href="bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="bootstrap-select.min.js"></script>
+    <script type="text/javascript" src="bootstrap.min.js"></script>
+
+    <!-- 
+these above  imports are for selector with search and stuff -->
+
+</body>
+
+</html>

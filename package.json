@@ -1,0 +1,31 @@
+{
+  "name": "medical-store-app",
+  "version": "1.0.0",
+  "description": "Medical Store App",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "watch": "nodemon --exec electron .",
+    "reset": "git reset --hard"
+  },
+  "keywords": [
+    "Electron",
+    "Master Electron",
+    "demo"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Umar24129?tab=repositories"
+  },
+  "author": "Muhammad Umar Khan",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^5.0.0",
+    "nodemon": "^1.19.4"
+  },
+  "dependencies": {
+    "git": "^0.1.5",
+    "jquery": "^3.6.0",
+    "mongodb": "^3.5.4"
+  }
+}
